@@ -290,9 +290,13 @@ jobs:
           https://raw.githubusercontent.com/loopandlearn/lnl-scripts/main/CustomizationSelect.sh)" \
           dexcom_upload_readings \
           profiles \
+          now_line \
+          lnl_icon \
+          watch_title
+
           # the final customization listed above CANNOT have a continuation character
           # more customizations can be pasted after this line
-      # Patch Fastlane Match to not print tables
+          # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
         run: |
           TABLE_PRINTER_PATH=$(ruby -e 'puts Gem::Specification.find_by_name("fastlane").gem_dir')/match/lib/match/table_printer.rb
