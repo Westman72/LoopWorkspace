@@ -292,6 +292,7 @@ jobs:
           profiles \
           now_line \
           lnl_icon \
+          basal_lock \
           watch_title
 
           # the final customization listed above CANNOT have a continuation character
